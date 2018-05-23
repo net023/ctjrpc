@@ -3,6 +3,32 @@
   <groupId>com.caitaojun.ctjrpc</groupId>
   <artifactId>ctjrpc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <description>a simple java Remote Procedure Call framework</description>
+  <url>http://www.caitaojun.com</url>
+  <parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+	<licenses>
+		<license>
+			<name>The ApacheSoftware License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<scm>
+		<tag>master</tag>
+		<connection>https://github.com/net023/ctjrpc.git</connection>
+		<developerConnection>http://www.caitaojun.com</developerConnection>
+		<url>https://github.com/net023/ctjrpc</url>
+	</scm>
+	<developers>
+		<developer>
+			<name>caitaojun</name>
+			<email>1955975796@qq.com</email>
+			<url>http://www.caitaojun.com</url>
+		</developer>
+	</developers>
   <dependencies>
   	<dependency>
   		<groupId>com.alibaba</groupId>
