@@ -1,0 +1,21 @@
+客户端通过动态代理，把调用方法接收的参数，通过fastjson序列化，然后方法调用后返回的数据进行反序列化
+
+服务端spring配置服务配置bean
+
+服务端通过servlet接收（post），
+	servlet中获取spring容器中的服务配置bean
+	接收参数：
+		interfaceName
+		methodName
+		args
+	接收后
+		通过interfaceName得到实现类
+		把args通过fastjson反序列化成对象
+		然后反射执行method
+		执行结果，把结构序列化成json
+		
+
+客户端通过spring配置，配置接口和实现类
+在启动后，通过代理，然后注入到spring容器里面	
+然后在使用的地方通过@Autoware自动注入接口对象即可（代理）		
+		
